@@ -267,9 +267,7 @@ end
   })
  
 
-local Page = UI.New({
-    Title = "A Menacing Day"
-})
+
 Page.Toggle({
     Text = "RareItemsOnly",
     Callback = function(value)
