@@ -271,7 +271,7 @@ local Page = UI.New({
     Title = "A Menacing Day"
 })
 Page.Toggle({
-    Text = "ABDM Item Farm",
+    Text = "RareItemsOnly",
     Callback = function(value)
         Enabled = value
         if value == true then do
