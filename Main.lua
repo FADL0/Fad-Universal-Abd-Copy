@@ -281,15 +281,16 @@ Page.Toggle({
 _G.Toggle = true -- Change to false and execute to turn off
 
 while _G.Toggle do wait()
-
 local speaker = game.Players.LocalPlayer
 
 local Human = speaker.Character:FindFirstChildWhichIsA("Humanoid")
-	for _, v in ipairs(workspace.Asda:GetChildren()) do
+for _, v in ipairs(workspace.Asda:GetChildren()) do
 	 
 		if speaker.Character and v:IsA("Tool") and v.Name == 'Potato' or v.Name == 'SixEyes' or v.Name == 'Just Monika' or v.Name == "Gon's Fishing Rod" or v.Name == 'Ender Pearl' or v.Name == '??? Diary' 
 		or v.Name == 'Pig Crown' or v.Name == 'MuzanBlood' or v.Name == 'GojoMask' then
 			Human:EquipTool(v)
+		end
+	end
 end         
 game:GetService("RunService").Heartbeat:Wait()
 	
@@ -304,4 +305,3 @@ end
 ,
 Enabled = false
 })
-
