@@ -139,7 +139,7 @@ Page.Button({
     [8] = 0.2
 }
 
-game:GetService("ReplicatedStorage").VampireRush:FireServer(unpack(args)) 
+game:GetService("ReplicatedStorage").HealFr:FireServer(unpack(args)) 
     end
 })
 
