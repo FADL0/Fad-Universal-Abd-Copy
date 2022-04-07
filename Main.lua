@@ -31,7 +31,7 @@ local args = {
     [2] = true
     
 }
-game:GetService("ReplicatedStorage").Anchor:FireServer(unpack(args))
+game:GetService("ReplicatedStorage").Stun:FireServer(unpack(args))
 end
 end 
     end
@@ -44,7 +44,7 @@ Page.TextField({
     [2] = true
     
 }
-game:GetService("ReplicatedStorage").Anchor:FireServer(unpack(args))
+game:GetService("ReplicatedStorage").Stun:FireServer(unpack(args))
     end
 })
 Page.Button({
@@ -59,7 +59,7 @@ local args = {
     [2] = false
     
 }
-game:GetService("ReplicatedStorage").Anchor:FireServer(unpack(args))
+game:GetService("ReplicatedStorage").Stun:FireServer(unpack(args))
 end
 end 
     end
@@ -117,7 +117,7 @@ local args = {
     [11] = 0.36
 }
 
-game:GetService("ReplicatedStorage").HealFr:FireServer(unpack(args))
+game:GetService("ReplicatedStorage").VampireRush:FireServer(unpack(args))
 end
 end 
     end
@@ -139,7 +139,7 @@ Page.Button({
     [8] = 0.2
 }
 
-game:GetService("ReplicatedStorage").Herobrine:FireServer(unpack(args)) 
+game:GetService("ReplicatedStorage").VampireRush:FireServer(unpack(args)) 
     end
 })
 
