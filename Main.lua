@@ -131,7 +131,7 @@ Page.Button({
        local args = {
     [1] = game:GetService("Players").LocalPlayer.Character.Humanoid,
     [2] = CFrame.new(Vector3.new(0, -500, 0), Vector3.new(-0, -0, -1)),
-    [3] = 550,
+    [3] = -999999999999,
     [4] = Vector3.new(0, 0, 0),
     [5] = 0.075,
     [6] = "rbxassetid://137579113",
