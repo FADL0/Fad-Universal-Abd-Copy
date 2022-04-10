@@ -31,7 +31,7 @@ local args = {
     [2] = true
     
 }
-game:GetService("ReplicatedStorage").Stun:FireServer(unpack(args))
+game:GetService("ReplicatedStorage").Anchor:FireServer(unpack(args))
 end
 end 
     end
@@ -44,7 +44,7 @@ Page.TextField({
     [2] = true
     
 }
-game:GetService("ReplicatedStorage").Stun:FireServer(unpack(args))
+game:GetService("ReplicatedStorage").Anchor:FireServer(unpack(args))
     end
 })
 Page.Button({
@@ -59,7 +59,7 @@ local args = {
     [2] = false
     
 }
-game:GetService("ReplicatedStorage").Stun:FireServer(unpack(args))
+game:GetService("ReplicatedStorage").Anchor:FireServer(unpack(args))
 end
 end 
     end
@@ -80,7 +80,7 @@ for i,v in ipairs(game.Players:GetChildren()) do
 local args = {
     [1] = v.Character.Humanoid,
     [2] = CFrame.new(Vector3.new(7.9194459915161, 243.7156829834, -45.460826873779), Vector3.new(-0.01910962164402, 0.99912708997726, -0.037146225571632)),
-    [3] = 50,
+    [3] = -69420,
     [4] = 0,
     [6] = "rbxassetid://245751634",
     [7] = 0.075,
@@ -90,7 +90,7 @@ local args = {
     [11] = 0.36
 }
 
-game:GetService("ReplicatedStorage").Damage22:FireServer(unpack(args))
+game:GetService("ReplicatedStorage").Heal4:FireServer(unpack(args))
 end
 end 
     end
@@ -117,7 +117,7 @@ local args = {
     [11] = 0.36
 }
 
-game:GetService("ReplicatedStorage").VampireRush:FireServer(unpack(args))
+game:GetService("ReplicatedStorage").Heal4:FireServer(unpack(args))
 end
 end 
     end
