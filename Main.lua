@@ -80,7 +80,7 @@ for i,v in ipairs(game.Players:GetChildren()) do
 local args = {
     [1] = v.Character.Humanoid,
     [2] = CFrame.new(Vector3.new(7.9194459915161, 243.7156829834, -45.460826873779), Vector3.new(-0.01910962164402, 0.99912708997726, -0.037146225571632)),
-    [3] = -69420,
+    [3] = 69420,
     [4] = 0,
     [6] = "rbxassetid://245751634",
     [7] = 0.075,
@@ -96,8 +96,6 @@ end
     end
 })
 
-
-
 Page.Button({
     Text = "Heal all",
     Callback = function()
@@ -105,7 +103,7 @@ Page.Button({
 for i,v in ipairs(game.Players:GetChildren()) do
     if v ~= game.Players.LocalPlayer then
 local args = {
-    [1] = v.Character.Humanoid,
+    [1] = Humanoid,
     [2] = CFrame.new(Vector3.new(7.9194459915161, 243.7156829834, -45.460826873779), Vector3.new(-0.01910962164402, 0.99912708997726, -0.037146225571632)),
     [3] = 69420,
     [4] = 0,
@@ -123,25 +121,19 @@ end
     end
 })
 
-
-
 Page.Button({
     Text = "god mode",
     Callback = function()
        local args = {
     [1] = game:GetService("Players").LocalPlayer.Character.Humanoid,
     [2] = CFrame.new(Vector3.new(0, -500, 0), Vector3.new(-0, -0, -1)),
-    [3] = -999999999999,
+    [3] = -math.huge,
     [4] = Vector3.new(0, 0, 0),
     [5] = 0.075,
     [6] = "rbxassetid://137579113",
     [7] = 1.8,
     [8] = 0.2
 }
-
-game:GetService("ReplicatedStorage").VampireRush:FireServer(unpack(args)) 
-    end
-})
 
 Page.TextField({
     Text = "Custom Qoute",
