@@ -355,15 +355,18 @@ Page.Toggle({
 _G.Toggle = true -- Change to false and execute to turn off
 
 while _G.Toggle do wait()
+
 local speaker = game.Players.LocalPlayer
 
 local Human = speaker.Character:FindFirstChildWhichIsA("Humanoid")
 	for _, v in ipairs(workspace.Asda:GetChildren()) do
 	 
-		if  v:FindFirstChild("Handle") and v.Name == 'Frog' or v.Name == 'Vampire Mask' or v.Name == "Dio's Diary" or v.Name == 'Shiny Diary' or v.Name == 'Requiem Arrow' or v.Name == 'CreepyPasta Diary' or v.Name == 'Holy Corpse' or v.Name == "Jotaro's Diary" or v.Name == 'Kw Diary' or v.Name == 'Frog' then
+		if v.Name == 'Frog' or v.Name == 'Vampire Mask' or v.Name == "DIO's Diary" or v.Name == 'Shiny Diary' or v.Name == 'Requiem Arrow' or v.Name == 'CreppyPasta Diary' or v.Name == 'Holy Corpse' or v.Name == "Jotaro's Diary" or v.Name == 'Kw Diary' or v.Name == 'StoneOceanDiary' or v.Name == 'NightmareDiary' or v.Name == 'Virus Arrow' or v.Name == 'AjaMask' or v.Name == 'Recep Arrow' or v.Name == '?H?A?T?E?' or v.Name == 'Red Ring??' or v.Name == 'Act4 Holy Corpse' or v.Name == 'GlitchDiary' or v.Name == 'Camera' or v.Name == "Sonic's Shoes" or v.Name == 'Ope Ope No Mi' or v.Name == 'Oof' or v.Name == 'Gold!' or v.Name == 'Arrow' or v.Name == 'Rokakaka Fruit' or v.Name == 'Frog' or v.Name == 'Banknote' or v.Name == 'Water' then
 			v:Destroy()
 		end
 	end
+
+
 end         
 game:GetService("RunService").Heartbeat:Wait()
 	
