@@ -128,6 +128,7 @@ mt.__namecall = newcclosure(function(self, ...)
     end
     return nc(self, ...)
 end)
+			end
 })
 
 
