@@ -57,9 +57,12 @@ game:GetService("ReplicatedStorage").Taunt:FireServer(unpack(args))
     end
 })
 
-Page.Button({
+
+Page.TextField({
     Text = "Damage Buff",
-    Callback = function()
+    Callback = function(value)
+        print(value)
+       
 game:GetService("Players").LocalPlayer.Character:BreakJoints()
 local mt = getrawmetatable(game)
 local nc = mt.__namecall
@@ -82,7 +85,10 @@ mt.__namecall = newcclosure(function(self, ...)
     return nc(self, ...)
 end)
 
+
+    end
 })
+
 
 Page.Toggle({
     Text = "Auto Use Money",
