@@ -150,8 +150,9 @@ game:GetService("ReplicatedStorage").Taunt:FireServer(unpack(args))
     end
 })
 
-Page.TextField({
+Page.Button({
     Text = "Damage Buff",
+    Callback = function()
 game:GetService("Players").LocalPlayer.Character:BreakJoints()
 local mt = getrawmetatable(game)
 local nc = mt.__namecall
@@ -188,8 +189,8 @@ mt.__newindex = newcclosure(function(self, key, value)
     end
     return newindex(self, key, value)
 end)
+    end
 })
-
 Page.Toggle({
     Text = "ABDM Item Farm",
     Callback = function(value)
