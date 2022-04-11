@@ -70,33 +70,18 @@ local Replicated = game:GetService("ReplicatedStorage")
 mt.__namecall = newcclosure(function(self, ...)
     local args = {...}
     local m = getnamecallmethod()
-    if m == "FireServer" and self.Name == "Anchor" then
-        args[1] = false
-        return nc(self, unpack(args))
-    elseif m == "FireServer" and self.Name == "Damage" then
+
+    if m == "FireServer" and self.Name == "Damage" then
         args[3] = 100
         return nc(self, unpack(args))
-    elseif m == "FireServer" and self.Name == "Knocked" then
-        Replicated.GetUp:FireServer()
-    elseif m == "FireServer" and self.Name == "Stand" then
-        args[2] = 9e9
-        args[3] = 9e9
+ 
+        elseif m == "FireServer" and self.Name == "DamageGojo" then
+        args[3] = 500
         return nc(self, unpack(args))
     end
     return nc(self, ...)
 end)
-mt.__newindex = newcclosure(function(self, key, value)
-    if checkcaller() then
-        return newindex(self, key, value)
-    end
-    if self == game.Players.LocalPlayer.Character.HumanoidRootPart then
-        if key == "CFrame" then
-            return
-        end
-    end
-    return newindex(self, key, value)
-end)
-    end
+
 })
 
 Page.Toggle({
