@@ -1,10 +1,4 @@
 repeat wait() until game:IsLoaded()
-local vu = game:GetService("VirtualUser")
-game:GetService("Players").LocalPlayer.Idled:connect(function()
-   vu:Button2Down(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
-   wait(1)
-   vu:Button2Up(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
-end)
 local Material = loadstring(game:HttpGet("https://raw.githubusercontent.com/Kinlei/MaterialLua/master/Module.lua"))()
 local UI = Material.Load({
      Title = "Made by Fad#0069",
@@ -17,7 +11,6 @@ local UI = Material.Load({
 local Page = UI.New({
     Title = "Main"
 })
-
 
 Page.Button({
     Text = "Freeze Others",
@@ -90,7 +83,7 @@ local args = {
     [11] = 0.36
 }
 
-game:GetService("ReplicatedStorage").Heal4:FireServer(unpack(args))
+game:GetService("ReplicatedStorage").Damage22:FireServer(unpack(args))
 end
 end 
     end
@@ -134,6 +127,11 @@ Page.Button({
     [7] = 1.8,
     [8] = 0.2
 }
+
+game:GetService("ReplicatedStorage").VampireRush:FireServer(unpack(args)) 
+    end
+})
+
 
 Page.TextField({
     Text = "Custom Qoute",
