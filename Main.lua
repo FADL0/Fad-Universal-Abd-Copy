@@ -9,7 +9,7 @@ local UI = Material.Load({
 })
 
 local Page = UI.New({
-    Title = "Main"
+    Title = "Character"
 })
 
 Page.Button({
@@ -191,40 +191,6 @@ mt.__newindex = newcclosure(function(self, key, value)
 end)
     end
 })
-Page.Toggle({
-    Text = "ABDM Item Farm",
-    Callback = function(value)
-        Enabled = value
-        if value == true then do
-        spawn(function()
-            
-
-_G.Toggle = true -- Change to false and execute to turn off
-
-while _G.Toggle do wait()
-local speaker = game.Players.LocalPlayer
-
-local Human = speaker.Character:FindFirstChildWhichIsA("Humanoid")
-	for _, v in ipairs(workspace:GetChildren()) do
-	 
-		if speaker.Character and v:IsA("BackpackItem") and v:FindFirstChild("Handle") and v.Name ~= 'Rainbow Collector' then
-			Human:EquipTool(v)
-		end
-	end
-end         
-game:GetService("RunService").Heartbeat:Wait()
-	
-        end)
-        end
-        else
-            
-
-_G.Toggle = false 
-end
-end
-,
-Enabled = false
-})
 
 Page.Toggle({
     Text = "Auto Use Money",
@@ -304,9 +270,46 @@ end
   })
  
 
+local Page = UI.New({
+    Title = "AutoFarms"
+})
 
 Page.Toggle({
-    Text = "RareItemsOnly",
+    Text = "Basic Item Farm",
+    Callback = function(value)
+        Enabled = value
+        if value == true then do
+        spawn(function()
+            
+
+_G.Toggle = true -- Change to false and execute to turn off
+
+while _G.Toggle do wait()
+local speaker = game.Players.LocalPlayer
+
+local Human = speaker.Character:FindFirstChildWhichIsA("Humanoid")
+	for _, v in ipairs(workspace:GetChildren()) do
+	 
+		if speaker.Character and v:IsA("BackpackItem") and v:FindFirstChild("Handle") and v.Name ~= 'Rainbow Collector' then
+			Human:EquipTool(v)
+		end
+	end
+end         
+game:GetService("RunService").Heartbeat:Wait()
+	
+        end)
+        end
+        else
+            
+
+_G.Toggle = false 
+end
+end
+,
+Enabled = false
+})
+Page.Toggle({
+    Text = "AMT Rare Items",
     Callback = function(value)
         Enabled = value
         if value == true then do
@@ -339,4 +342,9 @@ end
 end
 ,
 Enabled = false
+})
+
+
+local Page = UI.New({
+    Title = "Others"
 })
