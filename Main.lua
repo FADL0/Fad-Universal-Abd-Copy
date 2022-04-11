@@ -106,31 +106,28 @@ local Replicated = game:GetService("ReplicatedStorage")
 mt.__namecall = newcclosure(function(self, ...)
     local args = {...}
     local m = getnamecallmethod()
-
-    if m == "FireServer" and self.Name == "Damage" then
+    if m == "FireServer" and self.Name == "Anchor" then
+        args[1] = false
+        return nc(self, unpack(args))
+    elseif m == "FireServer" and self.Name == "Damage" then
         args[3] = 100
         return nc(self, unpack(args))
- 
-        elseif m == "FireServer" and self.Name == "DamageGojo" then
+          elseif m == "FireServer" and self.Name == "DamageGojo" then
         args[3] = 500
         return nc(self, unpack(args))
-    end
-    return nc(self, ...)
- elseif m == "FireServer" and self.Name == "DamageGojo2" then
+     elseif m == "FireServer" and self.Name == "Damage2Gojo" then
+        args[3] = 0
+        return nc(self, unpack(args))
+        
+          elseif m == "FireServer" and self.Name == "DamageGojo24" then
         args[3] = 500
         return nc(self, unpack(args))
-    end
-    return nc(self, ...)
-				
-				 elseif m == "FireServer" and self.Name == "DamageGojo24" then
-        args[3] = 500
+          elseif m == "FireServer" and self.Name == "Tauntgojo" then
+        args[2] = "Keep it halal guys"
         return nc(self, unpack(args))
     end
     return nc(self, ...)
 end)
-
-
-    end
 })
 
 
