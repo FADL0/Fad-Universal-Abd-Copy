@@ -344,6 +344,40 @@ end
 Enabled = false
 })
 
+Page.Toggle({
+    Text = "AMT Delete Useless",
+    Callback = function(value)
+        Enabled = value
+        if value == true then do
+        spawn(function()
+            
+
+_G.Toggle = true -- Change to false and execute to turn off
+
+while _G.Toggle do wait()
+local speaker = game.Players.LocalPlayer
+
+local Human = speaker.Character:FindFirstChildWhichIsA("Humanoid")
+	for _, v in ipairs(workspace.Asda:GetChildren()) do
+	 
+		if speaker.Character and v:IsA("BackpackItem") and v:FindFirstChild("Handle") and v.Name == 'Frog' or v.Name == 'Vampire Mask' or v.Name == "Dio's Diary" or v.Name == 'Shiny Diary' or v.Name == 'Requiem Arrow' or v.Name == 'CreepyPasta Diary' or v.Name == 'Holy Corpse' or v.Name == "Jotaro's Diary" or v.Name == 'Kw Diary' or v.Name == 'Frog' then
+			v.Destroy()
+		end
+	end
+end         
+game:GetService("RunService").Heartbeat:Wait()
+	
+        end)
+        end
+        else
+            
+
+_G.Toggle = false 
+end
+end
+,
+Enabled = false
+})
 
 local Page = UI.New({
     Title = "Others"
