@@ -107,9 +107,9 @@ Page.Toggle({
         spawn(function()
             
 
-_G.Toggle = true -- Change to false and execute to turn off
+_G.RealCash = true -- Change to false and execute to turn off
 
-while _G.Toggle do wait()
+while _G.RealCash do wait()
     for i,v in pairs(game.Players.LocalPlayer.Backpack:GetChildren())do -- Gets the tool
                 if string.find(v.Name,"LegendaryCoin") or string.find(v.Name,"Banknote") or string.find(v.Name,"Ruby") or string.find(v.Name,"Diamond") or string.find(v.Name,"Bandages") and v:IsA("Tool") then -- Checks for the tool
                     game.Players.LocalPlayer.Character.Humanoid:EquipTool(v) -- Equips the tool
@@ -124,7 +124,7 @@ game:GetService("RunService").Heartbeat:Wait()
         else
             
 
-_G.Toggle = false 
+_G.RealCash = false 
 end
 end
 ,
@@ -198,9 +198,9 @@ Page.Toggle({
         spawn(function()
             
 
-_G.Toggle = true -- Change to false and execute to turn off
+_G.AmtRare = true -- Change to false and execute to turn off
 
-while _G.Toggle do wait()
+while _G.AmtRare do wait()
 local speaker = game.Players.LocalPlayer
 
 local Human = speaker.Character:FindFirstChildWhichIsA("Humanoid")
@@ -219,7 +219,7 @@ game:GetService("RunService").Heartbeat:Wait()
         else
             
 
-_G.Toggle = false 
+_G.AmtRare = false 
 end
 end
 ,
@@ -234,9 +234,9 @@ Page.Toggle({
         spawn(function()
             
 
-_G.Toggle = true -- Change to false and execute to turn off
+_G.Deleteitems = true -- Change to false and execute to turn off
 
-while _G.Toggle do wait()
+while _G.Deleteitems do wait()
 
 local speaker = game.Players.LocalPlayer
 
@@ -257,7 +257,7 @@ game:GetService("RunService").Heartbeat:Wait()
         else
             
 
-_G.Toggle = false 
+_G.Deleteitems = false 
 end
 end
 ,
