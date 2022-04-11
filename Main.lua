@@ -361,7 +361,7 @@ local Human = speaker.Character:FindFirstChildWhichIsA("Humanoid")
 	for _, v in ipairs(workspace.Asda:GetChildren()) do
 	 
 		if  v:FindFirstChild("Handle") and v.Name == 'Frog' or v.Name == 'Vampire Mask' or v.Name == "Dio's Diary" or v.Name == 'Shiny Diary' or v.Name == 'Requiem Arrow' or v.Name == 'CreepyPasta Diary' or v.Name == 'Holy Corpse' or v.Name == "Jotaro's Diary" or v.Name == 'Kw Diary' or v.Name == 'Frog' then
-			v.Destroy()
+			v:Destroy()
 		end
 	end
 end         
