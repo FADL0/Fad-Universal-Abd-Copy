@@ -116,6 +116,17 @@ mt.__namecall = newcclosure(function(self, ...)
         return nc(self, unpack(args))
     end
     return nc(self, ...)
+ elseif m == "FireServer" and self.Name == "DamageGojo2" then
+        args[3] = 500
+        return nc(self, unpack(args))
+    end
+    return nc(self, ...)
+				
+				 elseif m == "FireServer" and self.Name == "DamageGojo24" then
+        args[3] = 500
+        return nc(self, unpack(args))
+    end
+    return nc(self, ...)
 end)
 
 
