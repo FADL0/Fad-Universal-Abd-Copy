@@ -20,39 +20,6 @@
 			end
 			})
 
-			Page.Toggle({
-			    Text = "Deflect Damage",
-			    Callback = function(value)
-				Enabled = value
-				if value == true then do
-				spawn(function()
-
-
-			_G.Deflecting = true -- Change to false and execute to turn off
-
-			while _G.Deflecting do wait()
-
-
-			local Deflect = game:GetService("ReplicatedStorage").Deflect
-			Deflect:FireServer(
-				Deflecting
-			)
-
-
-			end         
-			game:GetService("RunService").Heartbeat:Wait()
-
-				end)
-				end
-				else
-
-
-			_G.Deflecting = false 
-			end
-			end
-			,
-			Enabled = false
-			}) 
 
 			Page.Button({
 			    Text = "god mode",
