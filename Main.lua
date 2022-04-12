@@ -120,7 +120,7 @@
 				return nc(self, unpack(args))
 
 				  elseif m == "FireServer" and self.Name == "DamageGojo24" then
-				args[3] = 500
+				args[3] = 850
 				return nc(self, unpack(args))
 				  elseif m == "FireServer" and self.Name == "Tauntgojo" then
 				args[2] = "Real Talk"
