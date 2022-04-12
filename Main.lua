@@ -73,6 +73,10 @@ game:GetService("ReplicatedStorage").Heal3:FireServer(unpack(args))
 })
 
 
+
+Page.Button({
+    Text = "self heal",
+    Callback = function()
     local args = {
     [1] = game:GetService("Players").LocalPlayer.Character.Humanoid,
     [2] = 500,
@@ -82,26 +86,7 @@ game:GetService("ReplicatedStorage").Heal3:FireServer(unpack(args))
 
 }
 game:GetService("ReplicatedStorage").Heal3:FireServer(unpack(args)) 
-
-    })
-
-Page.Button({
-    Text = "self heal",
-    Callback = function()
-Page.TextField({
-    Text = "Custom Quote",
-    Callback = function(value)
-        print(value)
-        local args = {
-    [1] = game:GetService("Players").LocalPlayer.Character.Head,
-    [2] = value,
-    [3] = "rbxassetid://3516844345",
-    [4] = 3,
-    [5] = 10000000,
-    [6] = 0
-}
-
-game:GetService("ReplicatedStorage").Taunt:FireServer(unpack(args))
+    
     end
 })
 
