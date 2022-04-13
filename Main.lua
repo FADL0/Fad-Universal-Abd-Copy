@@ -41,6 +41,22 @@
 
 
 
+			Page.Button({
+			    Text = "Semi-God",
+			    Callback = function()
+
+			 local args = {
+			    [1] = "KingCrimsonStand", 
+			    [2] = 75 ,
+			    [3] = "9000"
+			 
+			}
+
+			game:GetService("ReplicatedStorage").Stand:FireServer(unpack(args)) 
+			
+			end
+			})
+
 
 			Page.Button({
 			    Text = "Real Buff",
