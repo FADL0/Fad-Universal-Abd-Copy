@@ -88,13 +88,6 @@
 				 elseif m == "FireServer" and self.Name == "Deflect" then
 				args[1] = true
 				return nc(self, unpack(args))
-				
-
-				 elseif m == "FireServer" and self.Name == "Stand" then
-				args[1] = "Gojo"
-				args[2] = 75
-				args[3] = "9000"		
-				return nc(self, unpack(args))
 						
 			    end
 			    return nc(self, ...)
