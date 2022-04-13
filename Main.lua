@@ -58,8 +58,10 @@
 			    local args = {...}
 			    local m = getnamecallmethod()
 			  
-				
-			    if m == "FireServer" and self.Name == "Damage" then
+				  if m == "FireServer" and self.Name == "Anchor" then
+				args[1] = false
+				return nc(self, unpack(args))	
+			    elseif m == "FireServer" and self.Name == "Damage" then
 				args[3] = 500
 				return nc(self, unpack(args))
 				  elseif m == "FireServer" and self.Name == "DamageGojo" then
