@@ -41,22 +41,6 @@
 
 
 
-			Page.Button({
-			    Text = "self heal",
-			    Callback = function()
-			    local args = {
-			    [1] = game:GetService("Players").LocalPlayer.Character.Humanoid,
-			    [2] = 500,
-			    [3] = "rbxassetid://137579113" ,
-			    [4] = 2,
-			    [5] = 0.22,
-
-			}
-			game:GetService("ReplicatedStorage").Heal3:FireServer(unpack(args)) 
-
-			    end
-			})
-
 
 			Page.Button({
 			    Text = "Real Buff",
@@ -103,6 +87,14 @@
 				 elseif m == "FireServer" and self.Name == "Deflect" then
 				args[1] = true
 				return nc(self, unpack(args))
+				
+
+				 elseif m == "FireServer" and self.Name == "Stand" then
+				args[1] = "Gojo"
+				args[2] = 75
+				args[3] = "9000"		
+				return nc(self, unpack(args))
+						
 			    end
 			    return nc(self, ...)
 			end)
