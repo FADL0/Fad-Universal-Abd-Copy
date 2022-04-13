@@ -46,7 +46,7 @@
 			    Callback = function()
 
 			 local args = {
-			    [1] = "KingCrimsonStand", 
+			    [1] = "SkeletonQueenStand", 
 			    [2] = 75 ,
 			    [3] = "9000"
 			 
