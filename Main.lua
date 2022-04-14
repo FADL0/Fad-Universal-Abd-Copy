@@ -220,7 +220,7 @@
 			for _, v in ipairs(workspace.Asda:GetChildren()) do
 
 					if speaker.Character and v:IsA("Tool") and v.Name == 'Potato' or v.Name == 'SixEyes' or v.Name == 'JustMonika' or v.Name == "Gon's Fishing Rod" or v.Name == 'Ender Pearl' or v.Name == '??? Diary' 
-					or v.Name == 'Pig Crown' or v.Name == 'MuzanBlood' or v.Name == 'GojoMask'  or v.Name == 'DusttrustSoul'  then
+					or v.Name == 'Pig Crown' or v.Name == 'MuzanBlood' or v.Name == 'GojoMask'  or v.Name == 'DustTrustSansSoul'  then
 						Human:EquipTool(v)
 					end
 				end
