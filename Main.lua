@@ -106,7 +106,7 @@
 				return nc(self, unpack(args))
 						
 			       elseif m == "FireServer" and self.Name == "GonDamage" then
-				args[3] = 500
+				args[3] = 0
 				return nc(self, unpack(args))
 						
 				  elseif m == "FireServer" and self.Name == "GonDamage2" then
