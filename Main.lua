@@ -106,15 +106,15 @@
 				return nc(self, unpack(args))
 						
 			       elseif m == "FireServer" and self.Name == "GonDamage" then
-				args[3] = 850
+				args[3] = 500
 				return nc(self, unpack(args))
 						
 				  elseif m == "FireServer" and self.Name == "GonDamage2" then
-				args[3] = 850
+				args[3] = 500
 				return nc(self, unpack(args))	
 						
 				  elseif m == "FireServer" and self.Name == "GonDamageScissors" then
-				args[3] = 850
+				args[3] = 500
 				return nc(self, unpack(args))
 						
 				  elseif m == "FireServer" and self.Name == "GonDamageNormal" then
