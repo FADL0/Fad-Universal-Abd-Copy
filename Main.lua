@@ -46,7 +46,7 @@
 			    Callback = function()
 
 			 local args = {
-			    [1] = "SkeletonQueenStand", 
+			    [1] = "CrazyDiamondStand", 
 			    [2] = 75 ,
 			    [3] = "9000"
 			 
@@ -106,7 +106,7 @@
 				return nc(self, unpack(args))
 						
 			       elseif m == "FireServer" and self.Name == "GonDamage" then
-				args[3] = 500
+				args[3] = 100
 				return nc(self, unpack(args))
 						
 				  elseif m == "FireServer" and self.Name == "GonDamage2" then
@@ -118,7 +118,7 @@
 				return nc(self, unpack(args))
 						
 				  elseif m == "FireServer" and self.Name == "GonDamageNormal" then
-				args[3] = 0
+				args[3] = 500
 				return nc(self, unpack(args))
 								
 						
