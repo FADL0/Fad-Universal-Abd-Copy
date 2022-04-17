@@ -61,7 +61,7 @@ uis.InputBegan:Connect(function(asd)
 if asd.KeyCode == Enum.KeyCode.W then 
     -- any key here (could be insert or delete whatever u want)
 local Players = game:GetService("Players")
-local Speed = 25
+local Speed = 35
 
 for i, Player in pairs (Players:GetChildren()) do
       local Character = Player.Character
