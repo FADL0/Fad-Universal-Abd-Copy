@@ -180,14 +180,17 @@ end)
 					elseif m == "FireServer" and self.Name == "Damage13" then
 				args[3] = 420
 				return nc(self, unpack(args))  
-					end
 				
 				
-			
-			
-			
+				
+					elseif m == "FireServer" and self.Name == "QuoteGamePlay" then
+				args[2] = "suck my dick my dick you faggot"
+				return nc(self, unpack(args))  
+				
+				
+				
 					end
-		    
+				
 			    return nc(self, ...)
 			end)
 						end
