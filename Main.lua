@@ -35,7 +35,7 @@
 			    [8] = 0.2
 			}
 
-			game:GetService("ReplicatedStorage").Heal3:FireServer(unpack(args)) 
+			game:GetService("ReplicatedStorage").Heal4:FireServer(unpack(args)) 
 			    end
 			})
 
@@ -54,6 +54,21 @@
 
 			game:GetService("ReplicatedStorage").Stand:FireServer(unpack(args)) 
 			
+			
+			local uis = game:GetService("UserInputService")
+
+uis.InputBegan:Connect(function(asd)
+if asd.KeyCode == Enum.KeyCode.W then 
+    -- any key here (could be insert or delete whatever u want)
+local Players = game:GetService("Players")
+local Speed = 25
+
+for i, Player in pairs (Players:GetChildren()) do
+      local Character = Player.Character
+      Character.Humanoid.WalkSpeed = Speed
+end
+end
+end)
 			end
 			})
 
@@ -121,8 +136,58 @@
 				args[3] = 500
 				return nc(self, unpack(args))
 								
-						
-			    end
+				 
+				 		  elseif m == "FireServer" and self.Name == "Heal3" then
+				args[2] = 500
+				return nc(self, unpack(args)) 	
+				
+				
+				elseif m == "FireServer" and self.Name == "Heal4" then
+				args[2] = 500
+				return nc(self, unpack(args)) 
+				
+						elseif m == "FireServer" and self.Name == "Heal7" then
+				args[2] = 500
+				return nc(self, unpack(args)) 
+				
+							elseif m == "FireServer" and self.Name == "Heal6" then
+				args[2] = 500
+				return nc(self, unpack(args)) 
+				
+						elseif m == "FireServer" and self.Name == "Heal5" then
+				args[2] = 500
+				return nc(self, unpack(args)) 
+				
+						elseif m == "FireServer" and self.Name == "Heal2" then
+				args[2] = 500
+				return nc(self, unpack(args)) 
+				
+						elseif m == "FireServer" and self.Name == "Heal" then
+				args[2] = 500
+				return nc(self, unpack(args)) 
+				
+				
+				elseif m == "FireServer" and self.Name == "Damage9" then
+				args[3] = 100
+				return nc(self, unpack(args)) 
+				
+				
+					elseif m == "FireServer" and self.Name == "Damage2" then
+				args[3] = 100
+				return nc(self, unpack(args))  
+				
+				
+					elseif m == "FireServer" and self.Name == "Damage13" then
+				args[3] = 420
+				return nc(self, unpack(args))  
+					end
+				
+				
+			
+			
+			
+					end
+		    
 			    return nc(self, ...)
 			end)
 						end
