@@ -46,7 +46,7 @@
 			    Callback = function()
 
 			 local args = {
-			    [1] = "CrazyDiamondStand", 
+			    [1] = "CrazyDiamond", 
 			    [2] = 75 ,
 			    [3] = "9000"
 			 
@@ -178,15 +178,12 @@ end)
 				
 				
 					elseif m == "FireServer" and self.Name == "Damage13" then
-				args[3] = 420
+				args[2] = 420
 				return nc(self, unpack(args))  
 				
 				
 				
-					elseif m == "FireServer" and self.Name == "QuoteGamePlay" then
-				args[2] = "suck my dick my dick you faggot"
-				return nc(self, unpack(args))  
-				
+					
 				
 				
 					end
