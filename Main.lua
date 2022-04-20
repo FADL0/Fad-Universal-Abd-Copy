@@ -182,6 +182,10 @@ end)
 				return nc(self, unpack(args))  
 				
 				
+					elseif m == "FireServer" and self.Name == "BombDamage" then
+				args[1] = math.huge
+				return nc(self, unpack(args))  
+				
 				
 					
 				
