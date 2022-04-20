@@ -183,7 +183,7 @@ end)
 				
 				
 					elseif m == "FireServer" and self.Name == "BombDamage" then
-				args[1] = math.huge
+				args[1] = 999
 				return nc(self, unpack(args))  
 				
 				
