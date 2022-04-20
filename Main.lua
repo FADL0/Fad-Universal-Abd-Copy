@@ -493,3 +493,40 @@ end)
 			end
 			   end
 			  })
+
+local Page = UI.New({
+			    Title = "Misc"
+			})
+Page.Toggle({
+			    Text = "Disable All Sounds",
+			    Callback = function(value)
+				Enabled = value
+				if value == true then do
+				spawn(function()
+
+
+			_G.StopSound = true -- Change to false and execute to turn off
+
+			while _G.StopSound do wait()
+			  	local store = {}
+	for i, object in pairs(workspace:GetDescendants()) do
+	    if object.ClassName == "Sound" and object.Name ~= "Real" then
+	        table.insert(store, #store + 1, {['Object'] = object, ['Vol'] = object.Volume})
+	        object.Playing = false -- change Volume to 0 after storing it in the store table
+	    end
+	end
+			end         
+			game:GetService("RunService").Heartbeat:Wait()
+
+				end)
+				end
+				else
+
+
+			_G.StopSound = false 
+			end
+			end
+			,
+			Enabled = false
+			})
+
