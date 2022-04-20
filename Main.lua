@@ -27,7 +27,7 @@
 			       local args = {
 			    [1] = game:GetService("Players").LocalPlayer.Character.Humanoid,
 			    [2] = CFrame.new(Vector3.new(0, -500, 0), Vector3.new(-0, -0, -1)),
-			    [3] = 500,
+			    [3] = -math.huge ,
 			    [4] = Vector3.new(0, 0, 0),
 			    [5] = 0.075,
 			    [6] = "rbxassetid://137579113",
@@ -35,7 +35,7 @@
 			    [8] = 0.2
 			}
 
-			game:GetService("ReplicatedStorage").Heal4:FireServer(unpack(args)) 
+			game:GetService("ReplicatedStorage").VampireRush:FireServer(unpack(args)) 
 			    end
 			})
 
