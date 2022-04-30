@@ -48,7 +48,7 @@
 			 local args = {
 			    [1] = "CrazyDiamondStand", 
 			    [2] = 75 ,
-			    [3] = "9000"
+			    [3] = "999"
 			 
 			}
 
